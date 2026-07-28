@@ -50,6 +50,7 @@ h1 {
     color: #0066cc;
     text-decoration: none;
     word-break: break-all;
+    margin-left: 6px;
 }
 
 .contact-info a:hover {
