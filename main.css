@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #777fda, #4a509e, #16183a);
+    background: linear-gradient(to bottom, #0066cc, #000000);
 }
 
 .container {
