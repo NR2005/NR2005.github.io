@@ -55,6 +55,14 @@ section {
     padding: 10px 0;
 }
 
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Required for vertical centering */
+}
+
+
 h2 {
     color: #003366;
     border-bottom: 2px solid #0066cc;
@@ -68,7 +76,8 @@ ul {
 }
 
 li {
-    margin-bottom: 8px;
+    margin-left: 20px;
+    margin-bottom: 6px;
     line-height: 1.4;
 }
 
