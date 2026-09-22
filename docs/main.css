@@ -56,10 +56,17 @@ section {
 }
 
 .picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Required for vertical centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0; /* Replaces height: 100vh to fit naturally in document flow */
+}
+
+.picture img {
+    max-width: 500px; /* Adjust default size for desktop */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 
@@ -97,6 +104,10 @@ li {
         margin: 3px 0;
     }
 
+    .picture img {
+        max-width: 300px; /* Scales down slightly on mobile screens */
+    }
+
     section {
         margin: 10px 0;
         padding: 8px 0;
@@ -132,6 +143,7 @@ li {
     h2 {
         font-size: 1.2em;
     }
+
 
     li {
         font-size: 0.9em;
