@@ -102,6 +102,22 @@ li {
     line-height: 1.4;
 }
 
+.experience-container {
+  display: flex;
+  align-items: flex-start; /* Aligns text and image to the top */
+  gap: 24px;              /* Adjust spacing between text and image */
+}
+
+.experience-text {
+  flex: 1;                /* Allows text to fill remaining horizontal space */
+}
+
+.experience-img {
+  max-width: 250px;       /* Set image width as needed */
+  height: auto;
+  flex-shrink: 0;
+}
+
 /* Mobile-specific improvements */
 @media (max-width: 768px) {
     .container {
