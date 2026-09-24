@@ -155,7 +155,7 @@ li {
     }
 
     .experience-container {
-        flex-direction: column-reverse; /* Text on top, logo underneath */
+        flex-direction: column; /* Text on top, logo underneath */
         align-items: center;
         gap: 15px;
     }
