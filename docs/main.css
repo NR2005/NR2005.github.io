@@ -153,7 +153,18 @@ li {
         margin: 3px 0;
         padding: 5px 0;
     }
+
+    .experience-container {
+        flex-direction: column-reverse; /* Text on top, logo underneath */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .experience-img {
+        max-width: 120px; /* Scales down logo on mobile */
+    }
 }
+
 
 /* Extra mobile optimization */
 @media (max-width: 480px) {
