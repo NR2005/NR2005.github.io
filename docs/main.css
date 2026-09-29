@@ -189,5 +189,14 @@ li {
     li {
         font-size: 0.9em;
     }
+    .experience-container {
+        flex-direction: column; /* Text on top, logo underneath */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .experience-img {
+        max-width: 120px; /* Scales down logo on mobile */
+    }
 }
 
