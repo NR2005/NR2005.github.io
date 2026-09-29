@@ -64,11 +64,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 0; /* Replaces height: 100vh to fit naturally in document flow */
+    margin: 15px 0; 
 }
 
 .picture img {
-    max-width: 500px; /* Adjust default size for desktop */
+    max-width: 500px; 
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -104,18 +104,40 @@ li {
 
 .experience-container {
   display: flex;
-  align-items: flex-start; /* Aligns text and image to the top */
-  gap: 24px;              /* Adjust spacing between text and image */
+  align-items: flex-start; 
+  gap: 24px;              
 }
 
 .experience-text {
-  flex: 1;                /* Allows text to fill remaining horizontal space */
+  flex: 1;               
 }
 
 .experience-img {
-  max-width: 250px;       /* Set image width as needed */
+  max-width: 230px;       
   height: auto;
   flex-shrink: 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-grid li {
+    margin: 0;
+}
+
+.skills-grid strong {
+    display: block;
+    color: #003366;
+    margin-bottom: 6px;
+}
+
+.skills-grid p {
+    margin: 0;
 }
 
 /* Mobile-specific improvements */
@@ -135,7 +157,7 @@ li {
     }
 
     .aboutMePicture img {
-        max-width: 300px; /* Scales down slightly on mobile screens */
+        max-width: 300px; 
     }
 
     section {
@@ -147,7 +169,7 @@ li {
         font-size: 1.3em;
     }
 
-    /* Make links more touch-friendly */
+   
     .contact-info a {
         display: block;
         margin: 3px 0;
@@ -155,13 +177,18 @@ li {
     }
 
     .experience-container {
-        flex-direction: column; /* Text on top, logo underneath */
+        flex-direction: column; 
         align-items: center;
         gap: 15px;
     }
 
     .experience-img {
-        max-width: 120px; /* Scales down logo on mobile */
+        max-width: 120px; 
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
 
@@ -190,13 +217,13 @@ li {
         font-size: 0.9em;
     }
     .experience-container {
-        flex-direction: column; /* Text on top, logo underneath */
+        flex-direction: column; 
         align-items: center;
         gap: 15px;
     }
 
     .experience-img {
-        max-width: 120px; /* Scales down logo on mobile */
+        max-width: 120px; 
     }
 }
 
